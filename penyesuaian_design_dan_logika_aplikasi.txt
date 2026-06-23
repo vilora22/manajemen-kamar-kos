@@ -1,0 +1,76 @@
+1. Penyesuaian di Kelola Kamar
+
+a. pop up tambah kamar
+karena tidak ada di design, jadi kau buat kan design nya sendiri mengikuti design yang kita buat. tambah fitur upload foto kamar juga
+
+b. pop up edit kamat
+Di bagian status operasional, hapus opsi tersedia dan terisi, menyisakan opsi nonaktifkan kamar. karena tersedia dan terisi otomatis oleh sistem, kemudian tambahkan juga fitur upload foto kamar.
+
+c. pop up detail kamar
+untuk status tabel kamar, memang hanya ada tiga status, tersedia, terisi, dan nonaktif. nah disini juga terjadi konfirmasi untuk pemesanan kamar. ditabel pemesanan sudah ada status menunggu verifikasi cash dan menunggu verifkasi transfer. apabila sudah dikonfrmasi, baru di pindahkan ke tabel penghuni. jadi di detail kamar juga ada konfirmasi untuk pemesanan kamar, design nya kuserahkan padamu, yang penting mengikuti design yang sudah ada. jika pemilik sudah konfirmasi, maka akan diarahkan ke ploatting penghuni untuk ditambahkan.
+
+d. notifikasi
+ini ke trigger ketika ada yang memesan kamar. jadi langsung di arahkan ke detail kamar untuk mengkonfirmasi nya
+
+2. penyesuaian di Kelola Penghuni
+disini tambah satu fitur dengan penempatannya sama dengan tambah kamar baru di kelola penghuni. fiturnya yaitu ploatting penghuni dari penyewa yang ada. jadi dari detail kamar diatas tadi, jika sudah di konfirmasi maka akan diarahkan ke ploatting penghuni di kelola penghuni
+
+3. Kelola Tagihan
+ini sudah di jelaskan lengkap di generate-logika.docx
+
+4. Penyesuaian di Pengaduan Pemilik
+disini kita tidak menggunakan status pengaduan, seperti di design, jadi dari sisi pemilik hanya bisa membaca pengaduan dan riwayat pengaduan.
+
+
+5. Penyesuian di Dashboard Penyewa1
+
+ubah "cari kos" diatas menjadi "cari kamar", hapus juga hasil pencarian. untuk opsi yang ada di design: semua, terdekat, termurah, tersedia, rating tertinggi. ubah jadi semua, termurah, dan fasilitas (urut dari fasilitas terbanyak)
+"lihat kamar tersedia sekarang" juga hapus, "chat diatas juga dihapus". notifikasi diatas akan ke trigger jika penyewa belum bayar tagihan bulanan, dari sisi pemilik di kelola tagihan, ada action ingatkan, maka notifikasi di penyewa akan ke trigger untuk membayar sewa nya bulanannya.
+
+6. Penyesuaian di Dashboard Penyewa2
+
+nama kos ubah jadi nama kamar, deposit juga hapus
+
+7. Penyesuaian di Dashboard Penyewa3
+
+data diri penyewa ubah jadi username, dan inputan yang di simpan di session itu hanya username dan no.hp, yang lain tetap ada tapi hanya sebagai inputan saja, tidak digunakan
+
+8. Dashboard penyewa5
+
+ini sudah sesuai (ini pemesanan kamar)
+
+9. Dashboard penyewa5
+
+ini sudah sesuai juga
+"kembali ke beranda" akan diarahkan ke "cari kos", kemudian jika "lihat status booking" akan diarahkan ke beranda penyewa
+
+10. penyesuaian di beranda penyewa
+
+hapus saya itu status: dikirim -> verifikasi -> persetujuan => checkin itu dihapus saja
+apa bila sudah di konfirmasi, jika penyewa ke beranda penyewa maka akan diarahkan ke dasboard penyewa
+
+11. penyesuaian di Kamar Penyewa
+
+tipe kamar itu dihapus saja, selebihnya sudah sesuai
+
+12. penyesuaian di tagihan penyewa
+
+tanggal masuk ada dua disitu
+tanggal masuk: 1 mei 2026
+tanggal masuk: 5 hari lagi -> ubah dari tanggal masuk sisa hari
+
+selebihnya sudah sesuai
+
+13. penyesuaian di riwayat penyewa
+
+ini akan menampilkan riyawat tagihan penyewa termasuk pembayaran pemesanan
+
+14. penyesuaian di pengaduan penyewa
+
+seperti yang sudah dibahas diatas, bahwa tidak ada status pengaduan.
+kategori juga tidak ada, yang ada hanya judul, isi, dan tanggal pengaduan (diisi otomatis oleh sistem)
+jadi hanya ada buat pengaduan dan riwayat pengaduan yang sudah dibuat.
+
+15. setelan akun penyewa
+
+sudah sesuai
